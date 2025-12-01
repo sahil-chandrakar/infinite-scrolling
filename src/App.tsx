@@ -30,7 +30,7 @@ const App = () => {
       setImages((prev) => [...prev, ...res.data]);
     } catch (e) {
       setError(e);
-      console.log(e);
+      console.log(error);
     } finally {
       setLoading(false);
     }
