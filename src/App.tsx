@@ -18,7 +18,7 @@ const App = () => {
     setLoading(true);
 
     const res = await axios.get<ApiData[]>(
-      `https://api.unsplash.com/photos?client_id=tyNB_mcZBIXWIoY1GskCrE2tO9KqBW7RUc03lbLoCeM&page=${page}&per_page=10`
+      `https://api.unsplash.com/photos?client_id=tyNB_mcZBIXWIoY1GskCrE2tO9KqBW7RUc03lbLoCeM&page=${page}&per_page=20`
     );
 
     setImages((prev) => [...prev, ...res.data]);
